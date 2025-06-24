@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from './layout/Layout';
 import Join from './pages/join/Join';
 import Login from './pages/login/Login';
@@ -26,7 +26,7 @@ const App = () => {
   return (
     <>
     <GlobalStyle/>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<Layout/>}>
             <Route index element={<MainPage/>}/>
@@ -40,7 +40,7 @@ const App = () => {
           
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       
     </>
   );
