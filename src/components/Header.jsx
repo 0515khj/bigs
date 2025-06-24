@@ -60,8 +60,8 @@ const Header = () => {
                     </DropWrap>
                 )}
                 
-                <div className={`centerBtn  ${menu ? 'open' : ''}` }  onClick={() => setMenu(!menu)}>
-                    <button className="menuBtn">
+                <div className="centerBtn"  onClick={() => setMenu(!menu)}>
+                    <button className={`menuBtn  ${menu ? 'open' : ''}`}>
                       <i className="icon hamburger"><TfiAlignJustify /></i>
                       <i className="icon close"><FiX /></i>
                     </button>
