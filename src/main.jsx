@@ -9,8 +9,6 @@ export const StoreContext = createContext({
 
 createRoot(document.getElementById('root')).render(
   <StoreContext.Provider value={{ userStore }}>
-  {/* <StrictMode> */}
     <App />
-  {/* </StrictMode>, */}
   </StoreContext.Provider>
 )

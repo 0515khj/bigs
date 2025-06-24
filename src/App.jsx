@@ -14,7 +14,7 @@ import { StoreContext } from './main';
 
 const App = () => {
   const { userStore } = useContext(StoreContext);
- const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     userStore.loadFromSession();
